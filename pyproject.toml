@@ -1,0 +1,38 @@
+[build-system]
+# FINAL-02: setuptools>=77 provides the PEP 639 SPDX license string and
+# the license-files field (the deprecated TOML-table form stops being
+# supported 2027-02-18).
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vulndog"
+version = "0.1.0"
+description = "Observing forward proxy with an offline vulnerability-KB matching engine (advisory candidates, never findings)."
+readme = "README.md"
+# PROVISIONAL default (owner GAP-1 decision open) — see src/vulndog/engine/VENDORING.md
+# FINAL-02: PEP 639 SPDX string form (was the deprecated {text = "MIT"} table).
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+# M3.3: `build` added for the release pipeline (`python -m build` produces the
+# sdist + wheel) and local reproduction of that build. Dev-only — runtime
+# dependencies stay empty.
+dev = ["pytest>=8", "build>=1.2"]
+
+[project.scripts]
+vulndog = "vulndog.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+# R2-G: test packages never ship in the wheel/sdist (supply-chain
+# hygiene) — the vendored engine tests and the M2.3 MCP tests alike.
+# The benchmark helpers benchutil/tap_sim STAY — they are documented
+# kept modules in engine/VENDORING.md (ADR-1).
+exclude = ["vulndog.engine.tests*", "vulndog.mcp.tests*"]
+
+[tool.setuptools.package-data]
+"vulndog.engine" = ["data/*.json"]

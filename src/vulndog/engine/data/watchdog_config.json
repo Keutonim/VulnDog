@@ -1,0 +1,22 @@
+{
+  "config_version": 1,
+  "_readme": "vuln-watchdog per-hunt runtime config (WD-R3, run.py). 'defaults' apply to every task; 'tasks.<task-id>' entries override per hunt. CLI flags override everything. floor: DEFAULT-TO-CALIBRATE per design-spec 5.3.4 until B6 calibration lands (rationale: internal p4 floor-calibration record).",
+  "floor_note": "0.49 = full-store recalibrated default 2026-10-16 (pre-registered rule ceil_to_0.01(max-negative-top1 + 0.02) = ceil(0.4680 + 0.02); controls on the completed FULL store, corpus vkb1-20746897a071179b, 456,460 records: 13 event-format positives 0.4797-0.6508, 12 benign negatives ceiling 0.4680, 2 verbatim anchors 0.6916-0.7433; pos 12/13, neg 0/12, verbatim 2/2 at 0.49 vs 2 negative events (4 top-K entries) leaking at the old 0.44). Full record: internal calibration artifacts (p4-floor-recalibration-applied.md + p4/floor-calibration.json). Previous: 0.44 (B6 slice-store calibration, corpus vkb1-773dcd1fa64a78f8, internal p4-floor-calibration record).",
+  "defaults": {
+    "top_k": 3,
+    "floor": 0.49,
+    "poll_interval_s": 1.0,
+    "state_interval_s": 5.0,
+    "backoff_s": 60.0,
+    "per_event_deadline_s": 60.0,
+    "console": true,
+    "mute_record_ids": [],
+    "mute_url_prefixes": [],
+    "filters": null,
+    "spool_root": null,
+    "ledger_path": null,
+    "evidence_dir": null,
+    "store_path": null
+  },
+  "tasks": {}
+}

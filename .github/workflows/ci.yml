@@ -1,0 +1,60 @@
+# VulnDog CI — the full in-tree test suite on every push and PR.
+#
+# Honesty notes (M3.3):
+# * The FULL engine test suite must run here — the vendored engine tests
+#   (src/vulndog/engine/tests) and the MCP tests (src/vulndog/mcp/tests) are
+#   in-tree and are collected by `python -m pytest -q` from the repo root
+#   together with the top-level tests/ suite. Nothing is skipped or deselected.
+# * No lint gate: the project defines no linter (stdlib-only, zero runtime
+#   dependencies, no ruff/flake8 config). Inventing one here would be a new
+#   project decision, not CI. Instead a compile + import/CLI smoke step below
+#   catches syntax errors and broken entry points before the suite runs.
+# * Cross-runner Python pattern: actions/setup-python provisions the requested
+#   interpreter and puts `python` on PATH on BOTH ubuntu and windows runners.
+#   The Windows-only `py` launcher is deliberately NOT used — plain `python`
+#   after setup-python is the pattern that works identically on both runners.
+# * Workflow execution is validated on GitHub runners only after a push;
+#   locally we validate YAML parsing, the command strings against the shipped
+#   CLI, and a local sdist/wheel build (see the developer report for M3.3).
+
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: pytest (${{ matrix.os }}, py${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - name: Check out the tree
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install from pyproject (editable + dev extra)
+        # Zero runtime dependencies; the dev extra carries pytest (and build).
+        # Quoting ".[dev]" keeps the extras syntax safe in both bash and pwsh.
+        run: python -m pip install -e ".[dev]"
+
+      - name: Compile + import/CLI smoke (no linter defined in this project)
+        run: |
+          python -m compileall -q src
+          python -c "import vulndog, vulndog.cli; print(vulndog.__version__)"
+          vulndog version
+
+      - name: Run the full test suite
+        run: python -m pytest -q

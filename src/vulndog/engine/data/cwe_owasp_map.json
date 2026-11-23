@@ -1,0 +1,2312 @@
+{
+ "map_version": "1.0.0",
+ "generated_at": "2026-10-15",
+ "generated_by": "vuln_watchdog.owasp_map.build_seed_from_top10",
+ "source": {
+  "archive": "Top10-master.zip",
+  "archive_sha256": "ffc2d4ee7030a7bce9b6465598df1e9e3c9082dad6e736e43c882488632f4aef",
+  "editions": [
+   "2021",
+   "2025"
+  ],
+  "selection": "EN category docs <edition>/(docs/)?en/A01..A10_*.md, section '## List of Mapped CWEs' (link-text parse)",
+  "unexpected_editions_ignored": [],
+  "note": "Offline seed (C1). cwec_v4.20.xml Taxonomy_Mappings cover only OWASP Top Ten 2004/2007; the Top10 archive carries the published 2021/2025 per-category CWE lists."
+ },
+ "categories": [
+  {
+   "label": "A01:2021-Broken-Access-Control",
+   "edition": "2021",
+   "code": "A01",
+   "title": "Broken Access Control",
+   "doc": "2021/docs/en/A01_2021-Broken_Access_Control.md",
+   "cwe_count": 34
+  },
+  {
+   "label": "A02:2021-Cryptographic-Failures",
+   "edition": "2021",
+   "code": "A02",
+   "title": "Cryptographic Failures",
+   "doc": "2021/docs/en/A02_2021-Cryptographic_Failures.md",
+   "cwe_count": 30
+  },
+  {
+   "label": "A03:2021-Injection",
+   "edition": "2021",
+   "code": "A03",
+   "title": "Injection",
+   "doc": "2021/docs/en/A03_2021-Injection.md",
+   "cwe_count": 33
+  },
+  {
+   "label": "A04:2021-Insecure-Design",
+   "edition": "2021",
+   "code": "A04",
+   "title": "Insecure Design",
+   "doc": "2021/docs/en/A04_2021-Insecure_Design.md",
+   "cwe_count": 40
+  },
+  {
+   "label": "A05:2021-Security-Misconfiguration",
+   "edition": "2021",
+   "code": "A05",
+   "title": "Security Misconfiguration",
+   "doc": "2021/docs/en/A05_2021-Security_Misconfiguration.md",
+   "cwe_count": 20
+  },
+  {
+   "label": "A06:2021-Vulnerable-and-Outdated-Components",
+   "edition": "2021",
+   "code": "A06",
+   "title": "Vulnerable and Outdated Components",
+   "doc": "2021/docs/en/A06_2021-Vulnerable_and_Outdated_Components.md",
+   "cwe_count": 3
+  },
+  {
+   "label": "A07:2021-Identification-and-Authentication-Failures",
+   "edition": "2021",
+   "code": "A07",
+   "title": "Identification and Authentication Failures",
+   "doc": "2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md",
+   "cwe_count": 22
+  },
+  {
+   "label": "A08:2021-Software-and-Data-Integrity-Failures",
+   "edition": "2021",
+   "code": "A08",
+   "title": "Software and Data Integrity Failures",
+   "doc": "2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md",
+   "cwe_count": 10
+  },
+  {
+   "label": "A09:2021-Security-Logging-and-Monitoring-Failures",
+   "edition": "2021",
+   "code": "A09",
+   "title": "Security Logging and Monitoring Failures",
+   "doc": "2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md",
+   "cwe_count": 4
+  },
+  {
+   "label": "A10:2021-Server-Side-Request-Forgery-SSRF",
+   "edition": "2021",
+   "code": "A10",
+   "title": "Server-Side Request Forgery (SSRF)",
+   "doc": "2021/docs/en/A10_2021-Server-Side_Request_Forgery_(SSRF).md",
+   "cwe_count": 1
+  },
+  {
+   "label": "A01:2025-Broken-Access-Control",
+   "edition": "2025",
+   "code": "A01",
+   "title": "Broken Access Control",
+   "doc": "2025/docs/en/A01_2025-Broken_Access_Control.md",
+   "cwe_count": 40
+  },
+  {
+   "label": "A02:2025-Security-Misconfiguration",
+   "edition": "2025",
+   "code": "A02",
+   "title": "Security Misconfiguration",
+   "doc": "2025/docs/en/A02_2025-Security_Misconfiguration.md",
+   "cwe_count": 16
+  },
+  {
+   "label": "A03:2025-Software-Supply-Chain-Failures",
+   "edition": "2025",
+   "code": "A03",
+   "title": "Software Supply Chain Failures",
+   "doc": "2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md",
+   "cwe_count": 6
+  },
+  {
+   "label": "A04:2025-Cryptographic-Failures",
+   "edition": "2025",
+   "code": "A04",
+   "title": "Cryptographic Failures",
+   "doc": "2025/docs/en/A04_2025-Cryptographic_Failures.md",
+   "cwe_count": 32
+  },
+  {
+   "label": "A05:2025-Injection",
+   "edition": "2025",
+   "code": "A05",
+   "title": "Injection",
+   "doc": "2025/docs/en/A05_2025-Injection.md",
+   "cwe_count": 37
+  },
+  {
+   "label": "A06:2025-Insecure-Design",
+   "edition": "2025",
+   "code": "A06",
+   "title": "Insecure Design",
+   "doc": "2025/docs/en/A06_2025-Insecure_Design.md",
+   "cwe_count": 39
+  },
+  {
+   "label": "A07:2025-Authentication-Failures",
+   "edition": "2025",
+   "code": "A07",
+   "title": "Authentication Failures",
+   "doc": "2025/docs/en/A07_2025-Authentication_Failures.md",
+   "cwe_count": 36
+  },
+  {
+   "label": "A08:2025-Software-or-Data-Integrity-Failures",
+   "edition": "2025",
+   "code": "A08",
+   "title": "Software or Data Integrity Failures",
+   "doc": "2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md",
+   "cwe_count": 14
+  },
+  {
+   "label": "A09:2025-Security-Logging-and-Alerting-Failures",
+   "edition": "2025",
+   "code": "A09",
+   "title": "Security Logging and Alerting Failures",
+   "doc": "2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md",
+   "cwe_count": 5
+  },
+  {
+   "label": "A10:2025-Mishandling-of-Exceptional-Conditions",
+   "edition": "2025",
+   "code": "A10",
+   "title": "Mishandling of Exceptional Conditions",
+   "doc": "2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md",
+   "cwe_count": 24
+  }
+ ],
+ "rows": [
+  {
+   "cwe": "cwe-2",
+   "categories": [
+    "A05:2021-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-5",
+   "categories": [
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-11",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-13",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-15",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-16",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-20",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-22",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-23",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-35",
+   "categories": [
+    "A01:2021-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-36",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-59",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-61",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-65",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-73",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-74",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-75",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-76",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-77",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-78",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-79",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-80",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-83",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-86",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-87",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-88",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-89",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-90",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-91",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-93",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-94",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-95",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-96",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-97",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-98",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-99",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-100",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-103",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-104",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-112",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-113",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-114",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-115",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-116",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-117",
+   "categories": [
+    "A09:2021-Security-Logging-and-Monitoring-Failures",
+    "A09:2025-Security-Logging-and-Alerting-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A09:2021-Security-Logging-and-Monitoring-Failures (2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md); A09:2025-Security-Logging-and-Alerting-Failures (2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md)"
+  },
+  {
+   "cwe": "cwe-129",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-138",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-159",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-183",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-184",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-200",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-201",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-209",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-213",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-215",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-219",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-221",
+   "categories": [
+    "A09:2025-Security-Logging-and-Alerting-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A09:2025-Security-Logging-and-Alerting-Failures (2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md)"
+  },
+  {
+   "cwe": "cwe-223",
+   "categories": [
+    "A09:2021-Security-Logging-and-Monitoring-Failures",
+    "A09:2025-Security-Logging-and-Alerting-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A09:2021-Security-Logging-and-Monitoring-Failures (2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md); A09:2025-Security-Logging-and-Alerting-Failures (2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md)"
+  },
+  {
+   "cwe": "cwe-234",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-235",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-248",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-252",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-255",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-256",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-257",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-258",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-259",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-260",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-261",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-264",
+   "categories": [
+    "A01:2021-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-266",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-269",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-274",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-275",
+   "categories": [
+    "A01:2021-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-276",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-280",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-281",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-282",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-283",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-284",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-285",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-286",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-287",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-288",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-289",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-290",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-291",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-293",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-294",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-295",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-296",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-297",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-298",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-299",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-300",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-302",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-303",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-304",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-305",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-306",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-307",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-308",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-309",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-310",
+   "categories": [
+    "A02:2021-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-311",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-312",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-313",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-315",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-316",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-319",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-320",
+   "categories": [
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-321",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-322",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-323",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-324",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-325",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-326",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-327",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-328",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-329",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-330",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-331",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-332",
+   "categories": [
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-334",
+   "categories": [
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-335",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-336",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-337",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-338",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-340",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-342",
+   "categories": [
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-345",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-346",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-347",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-350",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-352",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-353",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-359",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-362",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-369",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-377",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-379",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-382",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-384",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-390",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-391",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-394",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-396",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-397",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-402",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-419",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-424",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-425",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-426",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-427",
+   "categories": [
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-430",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-434",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-436",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-441",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-444",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-447",
+   "categories": [
+    "A03:2025-Software-Supply-Chain-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2025-Software-Supply-Chain-Failures (2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md)"
+  },
+  {
+   "cwe": "cwe-451",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-454",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-460",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-470",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-471",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-472",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-476",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-478",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-484",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-489",
+   "categories": [
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-493",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-494",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-497",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-500",
+   "categories": [
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-501",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-502",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-506",
+   "categories": [
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-509",
+   "categories": [
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-520",
+   "categories": [
+    "A05:2021-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-521",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-522",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-523",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-525",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-526",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-532",
+   "categories": [
+    "A09:2021-Security-Logging-and-Monitoring-Failures",
+    "A09:2025-Security-Logging-and-Alerting-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A09:2021-Security-Logging-and-Monitoring-Failures (2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md); A09:2025-Security-Logging-and-Alerting-Failures (2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md)"
+  },
+  {
+   "cwe": "cwe-537",
+   "categories": [
+    "A05:2021-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-538",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-539",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-540",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-541",
+   "categories": [
+    "A05:2021-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-547",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-548",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-550",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-552",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-564",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-565",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-566",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-579",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-598",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-601",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-602",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-610",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-611",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-613",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-614",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-615",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-620",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-628",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-636",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-639",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-640",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-642",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-643",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-644",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-646",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-650",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-651",
+   "categories": [
+    "A01:2021-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-652",
+   "categories": [
+    "A03:2021-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md)"
+  },
+  {
+   "cwe": "cwe-653",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-656",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-657",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-668",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-676",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-693",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-703",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-706",
+   "categories": [
+    "A01:2021-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-720",
+   "categories": [
+    "A02:2021-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-732",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-749",
+   "categories": [
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-754",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-755",
+   "categories": [
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-756",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A10:2025-Mishandling-of-Exceptional-Conditions"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A10:2025-Mishandling-of-Exceptional-Conditions (2025/docs/en/A10_2025-Mishandling_of_Exceptional_Conditions.md)"
+  },
+  {
+   "cwe": "cwe-757",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-759",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-760",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-776",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-778",
+   "categories": [
+    "A09:2021-Security-Logging-and-Monitoring-Failures",
+    "A09:2025-Security-Logging-and-Alerting-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A09:2021-Security-Logging-and-Monitoring-Failures (2021/docs/en/A09_2021-Security_Logging_and_Monitoring_Failures.md); A09:2025-Security-Logging-and-Alerting-Failures (2025/docs/en/A09_2025-Security_Logging_and_Alerting_Failures.md)"
+  },
+  {
+   "cwe": "cwe-780",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-784",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-798",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-799",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-807",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-818",
+   "categories": [
+    "A02:2021-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-829",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-830",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-840",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-841",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-862",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-863",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-913",
+   "categories": [
+    "A01:2021-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-915",
+   "categories": [
+    "A08:2021-Software-and-Data-Integrity-Failures",
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2021-Software-and-Data-Integrity-Failures (2021/docs/en/A08_2021-Software_and_Data_Integrity_Failures.md); A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-916",
+   "categories": [
+    "A02:2021-Cryptographic-Failures",
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A02:2021-Cryptographic-Failures (2021/docs/en/A02_2021-Cryptographic_Failures.md); A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-917",
+   "categories": [
+    "A03:2021-Injection",
+    "A05:2025-Injection"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2021-Injection (2021/docs/en/A03_2021-Injection.md); A05:2025-Injection (2025/docs/en/A05_2025-Injection.md)"
+  },
+  {
+   "cwe": "cwe-918",
+   "categories": [
+    "A10:2021-Server-Side-Request-Forgery-SSRF",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A10:2021-Server-Side-Request-Forgery-SSRF (2021/docs/en/A10_2021-Server-Side_Request_Forgery_(SSRF).md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-922",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-926",
+   "categories": [
+    "A08:2025-Software-or-Data-Integrity-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A08:2025-Software-or-Data-Integrity-Failures (2025/docs/en/A08_2025-Software_or_Data_Integrity_Failures.md)"
+  },
+  {
+   "cwe": "cwe-927",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-937",
+   "categories": [
+    "A06:2021-Vulnerable-and-Outdated-Components"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2021-Vulnerable-and-Outdated-Components (2021/docs/en/A06_2021-Vulnerable_and_Outdated_Components.md)"
+  },
+  {
+   "cwe": "cwe-940",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures",
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md); A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-941",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-942",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-1004",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-1021",
+   "categories": [
+    "A04:2021-Insecure-Design",
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md); A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-1022",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-1032",
+   "categories": [
+    "A05:2021-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-1035",
+   "categories": [
+    "A06:2021-Vulnerable-and-Outdated-Components",
+    "A03:2025-Software-Supply-Chain-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2021-Vulnerable-and-Outdated-Components (2021/docs/en/A06_2021-Vulnerable_and_Outdated_Components.md); A03:2025-Software-Supply-Chain-Failures (2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1104",
+   "categories": [
+    "A06:2021-Vulnerable-and-Outdated-Components",
+    "A03:2025-Software-Supply-Chain-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2021-Vulnerable-and-Outdated-Components (2021/docs/en/A06_2021-Vulnerable_and_Outdated_Components.md); A03:2025-Software-Supply-Chain-Failures (2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1125",
+   "categories": [
+    "A06:2025-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A06:2025-Insecure-Design (2025/docs/en/A06_2025-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-1173",
+   "categories": [
+    "A04:2021-Insecure-Design"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2021-Insecure-Design (2021/docs/en/A04_2021-Insecure_Design.md)"
+  },
+  {
+   "cwe": "cwe-1174",
+   "categories": [
+    "A05:2021-Security-Misconfiguration",
+    "A02:2025-Security-Misconfiguration"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A05:2021-Security-Misconfiguration (2021/docs/en/A05_2021-Security_Misconfiguration.md); A02:2025-Security-Misconfiguration (2025/docs/en/A02_2025-Security_Misconfiguration.md)"
+  },
+  {
+   "cwe": "cwe-1216",
+   "categories": [
+    "A07:2021-Identification-and-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2021-Identification-and-Authentication-Failures (2021/docs/en/A07_2021-Identification_and_Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1240",
+   "categories": [
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1241",
+   "categories": [
+    "A04:2025-Cryptographic-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A04:2025-Cryptographic-Failures (2025/docs/en/A04_2025-Cryptographic_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1275",
+   "categories": [
+    "A01:2021-Broken-Access-Control",
+    "A01:2025-Broken-Access-Control"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A01:2021-Broken-Access-Control (2021/docs/en/A01_2021-Broken_Access_Control.md); A01:2025-Broken-Access-Control (2025/docs/en/A01_2025-Broken_Access_Control.md)"
+  },
+  {
+   "cwe": "cwe-1329",
+   "categories": [
+    "A03:2025-Software-Supply-Chain-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2025-Software-Supply-Chain-Failures (2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1357",
+   "categories": [
+    "A03:2025-Software-Supply-Chain-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2025-Software-Supply-Chain-Failures (2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1390",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1391",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1392",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1393",
+   "categories": [
+    "A07:2025-Authentication-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A07:2025-Authentication-Failures (2025/docs/en/A07_2025-Authentication_Failures.md)"
+  },
+  {
+   "cwe": "cwe-1395",
+   "categories": [
+    "A03:2025-Software-Supply-Chain-Failures"
+   ],
+   "rationale": "OWASP-published 'List of Mapped CWEs': A03:2025-Software-Supply-Chain-Failures (2025/docs/en/A03_2025-Software_Supply_Chain_Failures.md)"
+  }
+ ]
+}

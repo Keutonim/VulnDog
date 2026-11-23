@@ -1,0 +1,20 @@
+{
+ "recipe_id": "stage1-tightened",
+ "recipe_version": "1.0.0",
+ "stage": "slice",
+ "description": "Stage-1 TIGHTENED recipe per director ruling D3/A4 2026-10-15 (state.md): a AND (b OR c) -- web-relevant CWE (branch a) AND (cvss >= cvss_min (b) OR has-public-exploit (c)). The design-2.3 strict union measured 213,152 records (a=93,282 / b=107,374 / c=52,154, artifacts/p2-join-stats.json) which was too big for the early-value slice; expected tightened size 30k-60k. Exploit records enter via the SLICED-CVE mirror (an EDB row is included when >= 1 of its resolved CVE refs is itself in the tightened slice) -- exploit rows carry no cwe_ids, so the literal a-branch is unsatisfiable for them; the mirror is the A4 composition sub-choice (design 2.3 'exploit kind: resolved-cve mirror', p2-join-stats slice_estimate.note delegates the choice to A4). Reference kinds per include_reference (A4 manifest config choice): the 32 web-relevant CWE catalog records and all 61 OWASP Top10 EN docs ride along (small, high matching context); cwe_category stays out (reference-only, excluded_from_index).",
+ "logic": "tightened",
+ "cvss_min": 7.0,
+ "web_relevant_cwes_version": "1.0.0",
+ "exploit_mirror": "sliced-cve",
+ "include_reference": {
+  "cwe_web_relevant": true,
+  "cwe_category": false,
+  "owasp_doc": true
+ },
+ "excluded_from_index_veto": true,
+ "min_total_tokens": 1,
+ "years": null,
+ "tuning_ruling": "state.md 2026-10-15 DIRECTOR RULING D3/A4: if the measured count lands far outside 30k-60k, tighten (cvss_min -> 8.0) and note it. Stage 2 = FULL corpus (owner-approved, task.md ADDENDUM 2).",
+ "expected_records": [30000, 60000]
+}

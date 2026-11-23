@@ -1,0 +1,19 @@
+{
+ "recipe_id": "full-corpus",
+ "recipe_version": "1.0.0",
+ "stage": "full",
+ "description": "Stage-2 FULL corpus (owner D3 sign-off 2026-10-15, task.md ADDENDUM 2, verbatim: 'da, polnyy'). EVERY record from the 4 valid sources; excluded_from_index records (no embeddable text) are kept STORE-ONLY: present in the records table with the flag, zero chunks, zero vectors (F1 law, QA-1 m-3). No slice predicate; exploit mirror = all; reference kinds all included.",
+ "logic": "full",
+ "cvss_min": null,
+ "web_relevant_cwes_version": "1.0.0",
+ "exploit_mirror": "all",
+ "include_reference": {
+  "cwe_web_relevant": true,
+  "cwe_category": true,
+  "owasp_doc": true
+ },
+ "excluded_from_index_veto": false,
+ "min_total_tokens": 1,
+ "years": null,
+ "expected_records": null
+}

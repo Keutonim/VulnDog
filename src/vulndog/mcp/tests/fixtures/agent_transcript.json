@@ -1,0 +1,67 @@
+{
+  "description": "Scripted AI-agent session against the VulnDog MCP server (M2.3 smoke). Replayed verbatim over stdio by test_smoke.py. Run ids are deterministic: the fixture run tree is created with an injected clock (20261123-090000 older, 20261123-100000 newer).",
+  "steps": [
+    {
+      "send": {"jsonrpc": "2.0", "id": 1, "method": "initialize",
+               "params": {"protocolVersion": "2024-11-05", "capabilities": {},
+                          "clientInfo": {"name": "scripted-agent", "version": "1.0"}}},
+      "expect": {"result_has": {"protocolVersion": "2024-11-05"}}
+    },
+    {
+      "notify": {"jsonrpc": "2.0", "method": "notifications/initialized"},
+      "expect": {"no_response": true}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 2, "method": "tools/list"},
+      "expect": {"tool_names": ["highlights", "run_status", "vuln_query"]}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 3, "method": "tools/call",
+               "params": {"name": "run_status", "arguments": {}}},
+      "expect": {"isError": false,
+                 "payload_has": {"hunt_id": "20261123-100000", "mode": "capture"}}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 4, "method": "tools/call",
+               "params": {"name": "highlights", "arguments": {"last_n": 1}}},
+      "expect": {"isError": false, "payload_has": {"total": 3, "returned": 1}}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 5, "method": "tools/call",
+               "params": {"name": "vuln_query",
+                          "arguments": {"text": "reflected xss in login page"}}},
+      "expect": {"isError": false, "payload_has": {"status": "ok"}}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 6, "method": "tools/call",
+               "params": {"name": "vuln_query",
+                          "arguments": {"text": "xss login",
+                                        "filters": {"min_cvss": 9.0}}}},
+      "expect": {"isError": false, "payload_has": {"status": "ok"}}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 7, "method": "tools/call",
+               "params": {"name": "highlights",
+                          "arguments": {"run_id": "19700101-000000"}}},
+      "expect": {"isError": true}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 8, "method": "resources/list"},
+      "expect": {"resources_count": 2}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 9, "method": "no/such-method"},
+      "expect": {"error_code": -32601}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 10, "method": "tools/call",
+               "params": {"name": "vuln_query",
+                          "arguments": {"text": "sql injection in search"}}},
+      "expect": {"isError": false, "payload_has": {"status": "ok"}}
+    },
+    {
+      "send": {"jsonrpc": "2.0", "id": 11, "method": "ping"},
+      "expect": {"result_has": {}}
+    }
+  ]
+}

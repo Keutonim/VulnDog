@@ -1,0 +1,28 @@
+# VulnDog — repository hygiene
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# run artifacts (timestamped run folders) + local vulnerability stores
+runs/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.db
+store/
+
+# factory workspace (plans, artifacts, worktrees) — not part of the product
+factory-workspace/
+
+# editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
